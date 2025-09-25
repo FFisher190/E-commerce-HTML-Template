@@ -10,15 +10,9 @@ Modern, responsive e-commerce template built with Bootstrap 5 and vanilla JavaSc
 
 ## Table of Contents
 
-- [Demo](#demo)  
 - [Features](#features)  
-- [Installation](#installation)  
----
-
-## Demo
-
-You can try the live demo here: [Add your GitHub Pages link or demo link]
-
+- [Installation](#installation)
+  
 ---
 
 ## Features
