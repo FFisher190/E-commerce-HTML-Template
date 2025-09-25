@@ -32,4 +32,4 @@ You can try the live demo here: [Add your GitHub Pages link or demo link]
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/shoply-ecommerce-template.git
+git clone https://github.com/FFisher190/E-commerce-HTML-Template.git
