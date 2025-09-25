@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shoply — E-commerce Template</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/src/main.css">
+</head>
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <i class="fa-solid fa-shop me-2 text-primary"></i>
+        <div>
+          <div style="line-height:1"><strong>Shoply</strong></div>
+          <small class="text-muted" style="font-size:.7rem">Your demo store</small>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/product/product.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        </ul>
+
+        <div class="d-flex align-items-center position-relative">
+          <button class="btn btn-outline-secondary me-2 d-flex align-items-center" id="cartBtn" data-bs-toggle="modal" data-bs-target="#cartModal">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="badge bg-danger rounded-pill ms-2 cart-count" id="cartCount">0</span>
+          </button>
+          <a class="btn btn-primary" href="#">Sign in</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 class="mb-3">Modern ecommerce template — built with Bootstrap + plain JS</h1>
+          <p class="text-muted">Responsive product grid,  social footer, and lightweight code you can copy and customize.</p>
+          <a href="/product/product.html" class="btn btn-primary me-2">Shop products</a>
+          <a href="#about" class="btn btn-outline-secondary">Learn more</a>
+        </div>
+        <div class="col-md-6 text-center d-none d-md-block">
+          <img src="https://picsum.photos/seed/ecom-hero/640/360" alt="hero" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products Carousel -->
+  <section class="container py-5">
+    <h2 class="mb-4 text-center">Featured Products</h2>
+    <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="row g-4 justify-content-center">
+            <div class="col-8 col-sm-6 col-md-4">
+              <div class="card product-card h-100 text-center">
+                <img src="https://picsum.photos/seed/f1/400/300" class="card-img-top" alt="Featured 1">
+                <div class="card-body">
+                  <h5 class="card-title">Featured Product 1</h5>
+                  <p class="price">$49.99</p>
+                  <button class="btn btn-sm btn-outline-primary add-to-cart" data-id="201"><i class="fa-solid fa-cart-plus me-1"></i>Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row g-4 justify-content-center">
+            <div class="col-8 col-sm-6 col-md-4">
+              <div class="card product-card h-100 text-center">
+                <img src="https://picsum.photos/seed/f2/400/300" class="card-img-top" alt="Featured 2">
+                <div class="card-body">
+                  <h5 class="card-title">Featured Product 2</h5>
+                  <p class="price">$79.99</p>
+                  <button class="btn btn-sm btn-outline-primary add-to-cart" data-id="202"><i class="fa-solid fa-cart-plus me-1"></i>Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row g-4 justify-content-center">
+            <div class="col-8 col-sm-6 col-md-4">
+              <div class="card product-card h-100 text-center">
+                <img src="https://picsum.photos/seed/f3/400/300" class="card-img-top" alt="Featured 3">
+                <div class="card-body">
+                  <h5 class="card-title">Featured Product 3</h5>
+                  <p class="price">$29.99</p>
+                  <button class="btn btn-sm btn-outline-primary add-to-cart" data-id="203"><i class="fa-solid fa-cart-plus me-1"></i>Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- About / CTA -->
+  <section id="about" class="py-5 bg-white border-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h3>Fast, flexible, and ready to customize</h3>
+          <p class="text-muted">Use this template as a starting point for your project — split files, add payment integration, or connect a backend to power real inventory.</p>
+          <ul>
+            <li>Mobile-friendly layout</li>
+            <li>Cart persisted in localStorage</li>
+            <li>Clean CSS + Bootstrap utilities</li>
+          </ul>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="https://picsum.photos/seed/ecom-2/520/320" class="img-fluid rounded" alt="about">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 mt-5">
+    <div class="container text-center">
+      <div class="social mb-2">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <p class="mb-0 small">&copy; <span id="year"></span> MyShop. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Cart Modal and Toast remain unchanged -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="/src/main.js"></script>
+</body>
+</html>
