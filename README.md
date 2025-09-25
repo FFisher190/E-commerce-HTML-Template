@@ -3,8 +3,8 @@ Modern, responsive e-commerce template built with Bootstrap 5 and vanilla JavaSc
 
 
 
-![Home Page Preview](./assets/Home.png)  
-![Product Page Preview](./assets/Product.png)  
+![Home Page Preview](./assets/Home.PNG)  
+![Product Page Preview](./assets/Product.PNG)  
 
 ---
 
